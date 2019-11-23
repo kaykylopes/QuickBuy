@@ -1,11 +1,12 @@
-﻿using Quickbuy.Dominio.Enumerados;
+﻿using Quickbuy.Dominio.Entidades;
+using Quickbuy.Dominio.Enumerados;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Quickbuy.Dominio.ObjetoValor
 {
-    public class FormaPagamento
+    public class FormaPagamento :Entidade
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -28,6 +29,11 @@ namespace Quickbuy.Dominio.ObjetoValor
         public bool NaoFoiDefinido
         {
             get { return Id == (int)TipoFormaPagamentoEnum.naoDefinido; }
+        }
+
+        public override void Validade()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Quickbuy.Dominio.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Quickbuy.Dominio.Enumerados
 {
-    public enum TipoFormaPagamentoEnum
+    public enum TipoFormaPagamentoEnum 
     {
         naoDefinido = 0,
         Boleto = 1,
