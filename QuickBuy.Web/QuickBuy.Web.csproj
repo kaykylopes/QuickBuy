@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Quickbuy.Dominio\Quickbuy.Dominio.csproj" />
+    <ProjectReference Include="..\QuickBuy.Repositorio\QuickBuy.Repositorio.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
